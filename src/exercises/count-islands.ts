@@ -19,7 +19,7 @@ class Point {
     }
 }
 
-export class Points {
+export class Exercise {
 
     points: Point[] = [];
 
@@ -51,10 +51,10 @@ export class Points {
     }
 }
 
-describe("Points.countIslands", () => {
+describe("Exercise.countIslands", () => {
 
     it("should count islands correctly (1)", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 1, 0, 0, 0],
             [0, 0, 0, 0, 0],
             [1, 0, 1, 0, 0],
@@ -64,7 +64,7 @@ describe("Points.countIslands", () => {
         ]).countIslands()).toBe(5));
 
     it("should count islands correctly (2)", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 1, 0, 0, 0],
             [1, 1, 0, 0, 0],
             [0, 0, 1, 0, 0],
@@ -72,24 +72,24 @@ describe("Points.countIslands", () => {
         ]).countIslands()).toBe(3));
 
     it("should handle empty grid", () =>
-        expect(new Points([]).countIslands()).toBe(0));
+        expect(new Exercise([]).countIslands()).toBe(0));
 
     it("should handle grid with only water", () =>
-        expect(new Points([
+        expect(new Exercise([
             [0, 0, 0],
             [0, 0, 0],
             [0, 0, 0]
         ]).countIslands()).toBe(0));
 
     it("should handle grid with only land", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 1, 1],
             [1, 1, 1],
             [1, 1, 1]
         ]).countIslands()).toBe(1));
 
     it("should handle multiple separate islands", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 1, 0, 0, 0],
             [1, 1, 0, 0, 0],
             [0, 0, 1, 0, 0],
@@ -97,21 +97,21 @@ describe("Points.countIslands", () => {
         ]).countIslands()).toBe(3));
 
     it("should handle diagonal lands as separate islands", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 0, 1],
             [0, 1, 0],
             [1, 0, 1]
         ]).countIslands()).toBe(5));
 
     it("should handle single-cell island", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 0, 0],
             [0, 0, 0],
             [0, 0, 1]
         ]).countIslands()).toBe(2));
 
     it("should handle complex island shapes", () =>
-        expect(new Points([
+        expect(new Exercise([
             [1, 1, 0, 1],
             [1, 0, 0, 1],
             [1, 1, 0, 1],

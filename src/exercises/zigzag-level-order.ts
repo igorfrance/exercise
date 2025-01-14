@@ -17,7 +17,7 @@ export class TreeNode {
     }
 }
 
-export class Kata4 {
+export class Exercise {
 
     zigzagLevelOrder(node: TreeNode): number[][] {
         if (node === null) {
@@ -59,11 +59,11 @@ export class Kata4 {
     }
 }
 
-describe("NodeTree.zigzagLevelOrder", () => {
-    let kata: Kata4;
+describe("Exercise.zigzagLevelOrder", () => {
+    let kata: Exercise;
 
     beforeEach(() => {
-        kata = new Kata4();
+        kata = new Exercise();
     });
 
     it("should handle empty tree", () => {

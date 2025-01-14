@@ -14,7 +14,8 @@
     "license": "MIT",
     "dependencies": {
         "@ifrance/configuration": "^1.0.0",
-        "dotenv": "^16.4.5"
+        "dotenv": "^16.4.5",
+        "pnpm": "^9.15.4"
     },
     "devDependencies": {
         "@types/node": "^22.10.1",

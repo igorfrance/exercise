@@ -14,6 +14,9 @@ importers:
       dotenv:
         specifier: ^16.4.5
         version: 16.4.7
+      pnpm:
+        specifier: ^9.15.4
+        version: 9.15.4
     devDependencies:
       '@types/node':
         specifier: ^22.10.1
@@ -841,6 +844,11 @@ packages:
   picomatch@4.0.2:
     resolution: {integrity: sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==}
     engines: {node: '>=12'}
+
+  pnpm@9.15.4:
+    resolution: {integrity: sha512-stwg4vxys+GISEWbNzWaMgZGY+VielHkx0ssKd2OjgSRSDw6u0B4nP1Xi/Ni+2uoJhsF8Dh9dnku1uI+o7G2oA==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss@8.4.49:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
@@ -1810,6 +1818,8 @@ snapshots:
   picomatch@2.3.1: {}
 
   picomatch@4.0.2: {}
+
+  pnpm@9.15.4: {}
 
   postcss@8.4.49:
     dependencies:
