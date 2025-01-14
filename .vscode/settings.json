@@ -1,0 +1,6 @@
+{
+    "favorites.sortOrder": "ASC",
+    "github.copilot.enable": {
+        "*": false
+    }
+}
